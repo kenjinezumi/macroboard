@@ -74,23 +74,16 @@ export default function navbar(){
                             <a href="#" className="nav-link px-0 align-middle">
                                 <i className="fs-4 bi-people"></i> <span className="ms-1 d-none d-sm-inline">Customers</span> </a>
                         </li>
-                    </ul>
-                    <hr/>
-                    <div className="dropdown pb-4">
-                        <a href="#" className="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" className="rounded-circle"/>
-                            <span className="d-none d-sm-inline mx-1">loser</span>
+
+                        <div className="dropdown pt-4 align-items-end">
+                        <a href="https://github.com/kenjinezumi" className="d-flex align-items-end text-white text-decoration-none" id="dropdownUser1" >
+                            <img src="http://media.cleveland.com/ent_impact_home/photo/caesarjpg-74b7832d6b800e14.jpg" alt="Das nezumi" width="30" height="30" className="rounded-circle"/>
+                            <span className="d-none d-sm-inline mx-1">Kenji Nezumi</span>
                         </a>
-                        <ul className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                            <li><a className="dropdown-item" href="#">New project...</a></li>
-                            <li><a className="dropdown-item" href="#">Settings</a></li>
-                            <li><a className="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr className="dropdown-divider"/>
-                            </li>
-                            <li><a className="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
+                      
                     </div>
+                    </ul>
+                   
                 </div>
             </div>
             

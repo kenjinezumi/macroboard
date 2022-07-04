@@ -10,7 +10,11 @@ const ExternalLink = ({href, children}) =>(
     </a>
 );
 
-export default function login(){
+export default function login(props){
+  const isLoggedIn = props.isLoggedIn; 
+
+  if(isLoggedIn){
+
     return (
 
 <div className="container  mw-100 min-vh-100  bg-secondary d-flex align-items-center justify-content-center">
@@ -54,6 +58,22 @@ export default function login(){
    </div>
  </div>
     )
+
+  }
+  else{
+    return(
+      <div className="container  mw-100 min-vh-100  bg-secondary d-flex align-items-center justify-content-center">
+      <div className="row">
+        <div className="col-12">
+          <div className="card">
+            <div className="card-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    )
+  }
 }
 
 /*
