@@ -1,8 +1,12 @@
 import Link from "../../node_modules/next/link";
 import 'bootstrap/dist/css/bootstrap.css';
-import FiguresCard from "../atoms/FiguresCard";
 import {Graph} from "../atoms/RenderGraphs";
-import GeoMap from "../atoms/GeoMap";
+import dynamic from '../../node_modules/next/dynamic';
+
+
+const LeafLetChart = dynamic(() => import("../atoms/Map"), { ssr:false })
+
+
 const ExternalLink = ({href, children}) =>(
     <a className="text-gray-500 hover:text-gray-600 transition"
     target="_blank"
@@ -43,6 +47,15 @@ export default function graphMains(){
         <div className="row flex-grow-1 m-4 align-items-center  text-center h-50 w-100 p-2">
           <div className="col-12 p-2 h-100 w-100 p-2">
           <Graph Title="Third time series" type="line" />
+
+
+          </div>
+         
+        </div>
+
+        <div className="row flex-grow-1 m-4 align-items-center  text-center h-50 w-100 p-2">
+          <div className="col-12 p-2 h-100 w-100 p-2">
+          <LeafLetChart/>
 
 
           </div>
