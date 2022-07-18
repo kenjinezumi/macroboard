@@ -40,3 +40,7 @@ footer{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+
+.leaflet-container {
+  height: 380px;
+}
