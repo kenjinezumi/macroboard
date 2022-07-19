@@ -18,52 +18,39 @@ const ExternalLink = ({href, children}) =>(
 
 export default function graphMains(){
     return (
-        <div className="col align-items-center bg-secondary min-vh-100 overflow-auto">
-        <div className="h-100 w-100 d-flex flex-column">
+      <div className="col align-items-center bg-secondary overflow-auto position-relative">
+      <div className="h-100 w-100 d-flex flex-column">
         <div className="row flex-grow-1 m-4 align-items-center text-center h-25 w-100">
           <div className="col-4  h-100 w-30">
-          <Graph Title="First bar chart" type="negativeBarChart" />
-
+            <Graph Title="First bar chart" type="negativeBarChart" />
           </div>
           <div className="col-4  h-100 w-40">
-          <Graph Title="Second bar chart" type="negativeBarChart" />
-
-
+            <Graph Title="Second bar chart" type="negativeBarChart" />
           </div>
           <div className="col-4  h-100 w-30">
-          <Graph Title="First bar chart" type="area" />
+            <Graph Title="First bar chart" type="area" />
           </div>
         </div>
         <div className="row flex-grow-1 m-4 align-items-center text-center h-25 w-100">
           <div className="col-6  h-100 w-50">
-          <Graph Title="First time series" type="line" />
-
+            <Graph Title="First time series" type="line" />
           </div>
           <div className="col-6  h-100 w-50">
-          <Graph Title="Second time series" type="line"/>
-
+            <Graph Title="Second time series" type="line" />
           </div>
         </div>
-        <div className="row flex-grow-1 m-4 align-items-center  text-center h-50 w-100 p-2">
+        <div className="row flex-grow-1 m-4 align-items-center  text-center h-50 w-100">
           <div className="col-12 p-2 h-100 w-100 p-2">
-          <Graph Title="Third time series" type="line" />
-
-
+            <Graph Title="Third time series" type="line" />
           </div>
-         
         </div>
-    
-
-        <div className="row flex-grow-1 m-4 align-items-center text-center h-50 w-100 p-2">
+        <div className="row flex-grow-1 m-4 align-items-center text-center h-50 w-100">
           <div className="col-12 p-2 h-100 w-100 p-2">
-          <LeafLetChart/>
 
-
-
+            <LeafLetChart />
           </div>
-         
         </div>
-        </div>
+      </div>
       </div>
     )
 }
