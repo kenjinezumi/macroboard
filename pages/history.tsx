@@ -7,7 +7,7 @@ import React from "react";
 import SearchBar from "../components/molecules/SearchBar";
 import GeoMap from "../components/atoms/GeoMap";
 
-class ReportSearch extends React.Component {
+class History extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,14 +24,13 @@ class ReportSearch extends React.Component {
                 <Navbar/>
                 </div>   
                 
-                <div className="col-auto  bg-light text-secondary  position-relative">
-                <SearchBar/>
+                <div className="col-8  bg-light text-secondary  position-relative">
+                    <title>
+                        This is where the list of all dashboards should be 
+                    </title>
+                
                 </div>   
-                <div className="col-md-6 bg-light text-secondary  position-relative">
-                <GeoMap/>
-                </div>   
-
-                                  
+                
             
               </div>
               <Footer />
@@ -40,4 +39,4 @@ class ReportSearch extends React.Component {
       
   }
 }
-export default ReportSearch;
+export default History;
