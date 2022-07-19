@@ -7,7 +7,7 @@ import React from "react";
 import SearchBar from "../components/molecules/SearchBar";
 import GeoMap from "../components/atoms/GeoMap";
 
-class History extends React.Component {
+class Settings extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -26,7 +26,7 @@ class History extends React.Component {
                 
                 <div className="col-8   text-secondary  position-relative">
                     <h1>
-                        This is where the list of all dashboards should be 
+                        This is where the list of all the settings should be. 
                     </h1>
                 
                 </div>   
@@ -39,4 +39,4 @@ class History extends React.Component {
       
   }
 }
-export default History;
+export default Settings;

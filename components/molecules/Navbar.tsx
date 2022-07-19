@@ -31,7 +31,8 @@ export default function navbar(){
 
                             <ul className="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                 <li className="w-100">
-                                    <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Search</span> </a>
+                                    <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">
+                                        <Link href="/search">Search</Link></span> </a>
                                 </li>
                                 <li className="w-100">
                                     <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline" >
@@ -39,14 +40,17 @@ export default function navbar(){
 
                                 </li>
                                 <li>
-                                    <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Settings</span></a>
+                                    <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">
+                                        <Link href="/settings">Settings</Link></span></a>
                                 </li>
                             </ul>
                         </li>
                         
                         <li>
                             <a href="#" className="nav-link px-0 align-middle">
-                                <i className="fs-4 bi-people"></i> <span className="ms-1 d-none d-sm-inline">Customers</span> </a>
+                                <i className="fs-4 bi-people"></i> <span className="ms-1 d-none d-sm-inline">
+                                <Link href="/account">Account</Link>
+                                </span> </a>
                         </li>
 
                         
