@@ -20,7 +20,7 @@ export function Graph(props){
         <div className="container-fluid h-100 d-flex flex-column ">
         <div className="text-center h-100">
           <div className="card h-100">
-            <div className="card-body ">
+            <div className="card-body">
               <h5 className="card-title">{props.Title}</h5>
               {GenerateChart(props.type)}
             </div>

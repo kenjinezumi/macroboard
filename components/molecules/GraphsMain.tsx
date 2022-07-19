@@ -18,7 +18,7 @@ const ExternalLink = ({href, children}) =>(
 
 export default function graphMains(){
     return (
-        <div className="col align-items-center bg-secondary min-vh-100">
+        <div className="col align-items-center bg-secondary min-vh-100 overflow-auto">
         <div className="h-100 w-100 d-flex flex-column">
         <div className="row flex-grow-1 m-4 align-items-center text-center h-25 w-100">
           <div className="col-4  h-100 w-30">
@@ -52,10 +52,12 @@ export default function graphMains(){
           </div>
          
         </div>
+    
 
-        <div className="row flex-grow-1 m-4 align-items-center  text-center h-50 w-100 p-2">
+        <div className="row flex-grow-1 m-4 align-items-center text-center h-50 w-100 p-2">
           <div className="col-12 p-2 h-100 w-100 p-2">
           <LeafLetChart/>
+
 
 
           </div>
