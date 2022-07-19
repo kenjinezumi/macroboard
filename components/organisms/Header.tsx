@@ -12,7 +12,7 @@ const ExternalLink = ({href, children}) =>(
 export default function header(){
     return (
 
-      <header>
+      <header  className="sticky-top">
       <div className="col-4 text-start ms-6">Aether</div>
       <div className="col-8 text-start"></div>
     </header>
